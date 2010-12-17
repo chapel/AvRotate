@@ -1,0 +1,25 @@
+body {
+	margin: 50px 0px; 
+	padding: 0px;
+	text-align: center;
+}
+
+ul#avatars {
+  width: 600;
+  padding: 10px;
+  margin: 20px;
+  position: relative;
+  list-style-type: none;
+  display: inline-block;
+}
+
+ul#avatars li {
+  width: 100px;
+  margin: 0px auto;
+  padding: 10px;
+  float: left;
+}
+
+ul#avatars img {
+  border: 1px solid black;
+}
