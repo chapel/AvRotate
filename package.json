@@ -1,17 +1,16 @@
 {
-  "name": "Avatar Rotator",
-  "description": "Rotates avatar collections.",
-  "version": "0.1.0",
-  "author": "Jacob Chapel",
-  "dependencies"  : {
-      "express": ">=1.0.0",
-      "chaos": ">=0.1.5"
-      "jade": ">=0.5.7"
-    },
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/chapel/AvRotator.git"
+  "name": "avrotate",
+  "subdomain": "avrotate",
+  "scripts": {
+    "start": "server.js"
   },
-  "engine": [ "node >=0.2.50" ]
-  "start": "server.js"
+  "version": "0.0.1-8",
+  "dependencies": {
+    "connect": ">= 1.1.5",
+    "express": ">= 2.1.0",
+    "chaos": ">= 0.1.6",
+    "mime": ">= 1.2.1",
+    "jade": ">= 0.5.7",
+    "qs": ">= 0.0.7"
+  }
 }

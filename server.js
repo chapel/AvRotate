@@ -11,14 +11,14 @@ db.get('stats', function(err, data){
 })
 
 app.configure(function(){
-  app.use(express.bodyDecoder())
+  app.use(express.bodyParser())
   app.use(express.favicon())
   app.set('view engine', 'jade')
   app.use(express.logger({ format: '":method :url" :status' }))
-  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }))
+  //app.use(express.errorHandler({ dumpExceptions: true, showStack: true }))
   app.use(app.router)
   app.set('views', __dirname + '/views')
-  app.use(express.staticProvider(__dirname + '/public'))
+  app.use(express.static(__dirname + '/public'))
 })
 
 
@@ -177,5 +177,5 @@ app.error(function(err, req, res){
   res.send(''+err)
 })
 
-app.listen(80)
+app.listen(8000)
 
